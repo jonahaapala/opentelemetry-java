@@ -245,6 +245,7 @@ class OtlpHttpMetricExporterTest {
     try {
       assertThat(exporter.flush().isSuccess()).isTrue();
     } finally {
+
       exporter.shutdown();
     }
   }
